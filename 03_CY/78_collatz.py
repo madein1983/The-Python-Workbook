@@ -11,4 +11,6 @@ while last_element != 1 :
             if last_element == 1 :
                 print(last_element)
                 last_element = float(input("enter the new number: "))
+            if last_element == 0 :
+                quit()
 
