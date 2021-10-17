@@ -1,5 +1,4 @@
 line  = input("Enter the binary for example 0100101: ")
-i = 0
 num = 0
 print("Long: ", len(line))
 for i in range(len(line)) :
