@@ -5,7 +5,6 @@ while i <=9 :
     line = ""
     j = 0
     exit_flag = False
-    
     while exit_flag == False :
         a = randint(0,1)
         line = line + str(a)
