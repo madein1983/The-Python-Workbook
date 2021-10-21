@@ -41,5 +41,3 @@ def numeral(n):
 def main():
     n = int(input("Enter the number from 1 to 12: "))
     print("The result is: ", numeral(n))
-if __name__ == "__main__":
-    main()
