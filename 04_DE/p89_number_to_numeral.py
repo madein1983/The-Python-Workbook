@@ -17,7 +17,7 @@ def numeral(n):
             return r
     elif n == 6:
             r = "sixth"
-            return r
+            return r 
     elif n == 7:
             r = "seventh"
             return r
