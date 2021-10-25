@@ -13,9 +13,12 @@ def reliable(passw):
         else :
             pass
     if up_case != 0 and low_case != 0 and digit != 0 and len(passw) >=8 :
+        # print("ok")
         return True
     else : 
+        # print("ne ok")
         return False
+    
 
 
 def main():
