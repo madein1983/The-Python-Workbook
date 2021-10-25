@@ -6,7 +6,6 @@ def main() :
     counter = 0
     while rely != False :
         passw = curr_password()
-        # print(passw)
         check = p102_reliable_pass.reliable(passw)
         if check :
             print(passw," is reliable password")
