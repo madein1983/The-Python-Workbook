@@ -1,7 +1,5 @@
 import p106_imported_58
-
 def is_magic_date(dd,mm,yyyy) :
-
     las_two_digit = int(yyyy[2:])
     if dd*mm == las_two_digit :
         print("It's a magic date")
