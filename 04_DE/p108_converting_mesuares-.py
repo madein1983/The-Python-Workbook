@@ -14,7 +14,7 @@ def calc(weight):
     full_teaspoons = remainder // TEASPOON
     print("full_teaspoons = remainder // TEASPOON",full_teaspoons)
     remainder = remainder % TEASPOON
-    print("remainder = remainder % TEASPOON",remainder)
+    new_var = print("remainder = remainder % TEASPOON",remainder)
     return weight,full_cups,full_spoons,full_teaspoons
 
 def main():
