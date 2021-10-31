@@ -15,8 +15,9 @@ def pull_words(line_in):
     return new_string
 
 def string_to_list (new_string) : 
-    new_list = new_string.split()
-    print(new_list)    # this is common method but we will go further =>
+    new_list = new_string.split() # this is common method but we will go further =>
+    print(new_list)    
+    
 
 def string_to_list_old_school(new_string) :
     i = 0
@@ -36,8 +37,7 @@ def main():
     # print(allchars())
     new_string = pull_words(line_in)
     string_to_list(new_string)
-    # print(string.printable)
     string_to_list_old_school(new_string)
+
 if __name__ == "__main__" :
     main()
-    # Contraction include: don't isn't and wouldn't 
