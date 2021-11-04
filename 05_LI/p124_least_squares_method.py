@@ -1,8 +1,6 @@
 def calc_m(ax,ay):
-    
     print("sum of X: ",sum(ax))
     print("sum of Y: ",sum(ay))
-
     sum_of_mult_x_and_y = 0
     for i in range(0,len(ax)) :
         sum_of_mult_x_and_y = sum_of_mult_x_and_y + ax[i]*ay[i]
@@ -19,10 +17,9 @@ def calc_b(ax,ay,m) :
     print(sum(ay))
     print(sum(ax))
     print(m)
-    b = sum(ay) - (sum(ax)*m)
+    b = (sum(ay) - (sum(ax)*m))/len(ax)
     print("The b is equal: ",b)
     return b
-
 
 def main():
     ax =list()
@@ -33,7 +30,6 @@ def main():
     ay.append(y)
     while x != "":
         
-            
         x = input("Enter x(Enter to exit): ")
         if x == "":
             break
@@ -47,8 +43,7 @@ def main():
     m = calc_m(ax,ay)
     print("m: ", m)
     b = calc_b(ax,ay,m)
-    print("The equation is: y = {}*x + {}".format(m,b))
-
+    print("The equation is: y = {:6.2f}*x+{:6.2f}".format(m,b))
 
 if __name__ == "__main__" :
     main()
