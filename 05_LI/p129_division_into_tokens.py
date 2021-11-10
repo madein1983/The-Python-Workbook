@@ -14,7 +14,6 @@ def token_division_hjklgjfkctctc(line_in) :
                 else :
                     flag = 1
             token_list.append((dig))         
-
 def token_division(line_in) :
     token_list = [] 
     i = 0 
@@ -33,9 +32,8 @@ def token_division(line_in) :
             i = i + len(digits)
         else : 
             print("Error!")
-            
-
     print(token_list)
+    return token_list
 def main() :
     line_in = str(input("Enter math sequence(for example (2+3^2)/3): "))
     token_division(line_in)
