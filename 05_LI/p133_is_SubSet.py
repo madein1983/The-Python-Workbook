@@ -2,6 +2,9 @@
 def isSubList (list_of_items,sub_list) :
     index_arr = []
     counter = 0
+    list_of_items = list(set(list_of_items))
+    sub_list = list(set(sub_list))
+    
     for i in range(0,len(sub_list)) :
         for j in range(0,len(list_of_items)) :
             if sub_list[i] == list_of_items[j] :
@@ -36,8 +39,11 @@ def main ():
     #     i += 1
     # list_of_items = [1,2,3,4,5,6,7,8,9,10,11,12]
     # sub_list = [3,4,5,6,7,8,9,10]
-    list_of_items = ["volvo", "WV", "GM", "TOYOTA"]
-    sub_list = ["WV", "TOYOTA"]
+    list_of_items = ["volvo", "WV", "GM", "TOYOTA", "WV"]
+    # sub_list = ["WV", "TOYOTA"]
+    sub_list = ["WV", "GM"]
+    # sub_list = ["GM", "TOYOTA"]
+
     print(list_of_items)
     print(sub_list)
     if len(sub_list) == 0 :
