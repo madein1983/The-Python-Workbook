@@ -1,5 +1,4 @@
 from p129_division_into_tokens import token_division
-
 def unary_excretion (l_o_t) : # split_off
     list_out = []
     for i in range(0, len(l_o_t)) :
