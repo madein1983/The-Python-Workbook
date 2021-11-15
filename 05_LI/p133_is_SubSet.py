@@ -27,11 +27,6 @@ def main ():
     #     if line_in != "" :
     #        list_of_items.append(line_in)
     #     i += 1
-    # list_of_items = [1,2,3,4,5,6,7,8,9,10,11,12]
-    # sub_list = [3,4,5,6,7,8,9,10]
-    list_of_items = ["volvo", "WV", "GM", "TOYOTA"]
-    sub_list = ["WV", "TOYOTA"]
-    print(list_of_items)
     # line_in = " "
     # i = 0
     # while line_in != "" :
@@ -39,6 +34,11 @@ def main ():
     #     if line_in != "" :
     #         sub_list.append(line_in)
     #     i += 1
+    # list_of_items = [1,2,3,4,5,6,7,8,9,10,11,12]
+    # sub_list = [3,4,5,6,7,8,9,10]
+    list_of_items = ["volvo", "WV", "GM", "TOYOTA"]
+    sub_list = ["WV", "TOYOTA"]
+    print(list_of_items)
     print(sub_list)
     if len(sub_list) == 0 :
         print("The list is empty! ")
