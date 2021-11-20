@@ -19,7 +19,7 @@ def create_lotto_range() :
         if columns[i] == "o" :
             for j in range(61,75) :
                 lotto[j] = "O"                
-    print(lotto)
+    # print(lotto)
     return lotto
 
 def create_lotto_card(lotto) :
@@ -30,7 +30,7 @@ def create_lotto_card(lotto) :
         if count < 5 :
             lotto_card[temp] = lotto[temp]
             count += 1
-    print(lotto_card)
+    # print(lotto_card)
     return lotto_card
 
 def display_created_card(lotto) :
