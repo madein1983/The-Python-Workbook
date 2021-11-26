@@ -5,12 +5,11 @@ if len(sys.argv) != 2 :
     quit()
 
 file_cont = open(sys.argv[1],"r")
-
 file_in_list = []
+
 try :
     line_in = file_cont.readline()
     line_in.strip()
-
     while line_in != "" :
         # print(line_in, end ="")
         line_in = file_cont.readline()
@@ -24,4 +23,4 @@ try :
 
 except IOError:
     print("IOError")
-
+    quit()
