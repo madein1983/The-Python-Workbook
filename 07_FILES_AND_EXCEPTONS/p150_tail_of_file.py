@@ -6,6 +6,22 @@ if len(sys.argv) != 2 :
 
 file_cont = open(sys.argv[1],"r")
 
-line_in = file_cont.readline()
-while line_in != "" :
-    
+file_in_list = []
+try :
+    line_in = file_cont.readline()
+    line_in.strip()
+
+    while line_in != "" :
+        # print(line_in, end ="")
+        line_in = file_cont.readline()
+        # line_in = line_in.removesuffix('\n')  3.9
+        if line_in.endswith('\n') :
+            line_in = line_in[:-2]
+        file_in_list.append(line_in)
+    for i in range(len(file_in_list)-10,len(file_in_list)):
+        print(file_in_list[i])
+    # print(file_in_list)
+
+except IOError:
+    print("IOError")
+
