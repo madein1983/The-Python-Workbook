@@ -7,7 +7,7 @@ if len(sys.argv) != 2 :
 
 try:
     inf = open(sys.argv[1],"r")
-    file_opened = True
+    # file_opened = True
     line = inf.readline()
     num = 0
     while num < NUM_OF_LINES and line != "":
