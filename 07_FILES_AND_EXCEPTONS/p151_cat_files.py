@@ -13,7 +13,7 @@ for i in range(1,len(sys.argv)):
     file_container = open(sys.argv[i])
     line_from_file = file_container.readline()
     while line_from_file != "" :
-        print(line_from_file)
+        print(line_from_file, end='')
         line_from_file = file_container.readline()
     file_container.close()
     
