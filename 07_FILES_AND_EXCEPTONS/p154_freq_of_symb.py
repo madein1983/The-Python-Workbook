@@ -21,6 +21,6 @@ for i in lines:
     for j in i:
         if j.upper() in alphabet:
            alphabet[j.upper()] = alphabet[j.upper()] + 1  
-print(alphabet)
+# print(alphabet)
 for i in alphabet:
     print(i, " : ", alphabet[i])
