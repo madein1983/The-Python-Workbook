@@ -82,7 +82,7 @@ def number_to_letter(mark_in):
     return mark_out
         
 def main():
-    mark_in = input("Enter the mark in format letter and sign or number in format 0,1,2,3,4( or 1.2 only decimal) for example 5 or A+: ")
+    mark_in = input("Enter the mark in format letter and sign or number in format 0,1,2,3,4( or 1.2 only decimal) for example 5 or A+( Enter to exit.): ")
     while mark_in != "":
         try:
             if len(mark_in) > 3 :
@@ -96,11 +96,11 @@ def main():
             elif len(mark_in) == 1 and (ord("0") <= ord(mark_in) and ord(mark_in) <= ord("4")):
                 print(number_to_letter(mark_in))
             
-            mark_in = input("Enter the mark in forma letter and sign, for example 5 or A+: ")
+            mark_in = input("Enter the mark in format letter and sign or number in format 0,1,2,3,4( or 1.2 only decimal) for example 5 or A+( Enter to exit.):")
         except ValueError :
-            print ("You made a mistake ValueError try again! Double Enter to exit.")
+            print ("You made a mistake ValueError try again!  Enter to exit.")
         except TypeError :
-            print ("You made a mistake TypeError try again! Double Enter to exit.")    
+            print ("You made a mistake TypeError try again!  Enter to exit.")    
 
 
 if __name__ == "__main__" :
