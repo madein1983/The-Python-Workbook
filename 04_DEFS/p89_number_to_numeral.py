@@ -40,4 +40,5 @@ def numeral(n):
         return 0
 def main():
     n = int(input("Enter the number from 1 to 12: "))
-    print("The result is: ", numeral(n))
+    resu = numeral(n)
+    print("The result is: ", resu)
