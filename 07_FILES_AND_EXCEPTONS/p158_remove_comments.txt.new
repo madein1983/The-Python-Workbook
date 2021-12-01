@@ -1,0 +1,8 @@
+2 code to make dino unmortable
+
+3 # comment
+
+chrome://dino
+
+Console Ctrl + Shift + I  -> Console -> Runner.instance_.gameOver = () => {}
+
