@@ -3,7 +3,6 @@ import sys
 if len(sys.argv) != 2 :
     print("argv count Error")
     quit()
-
 try :
     file_container = open(sys.argv[1])
     lines_from_files = []
@@ -30,14 +29,7 @@ try :
                 correct_spell.append(i)
             if i[j].upper() == "C" and i[j+1].upper() == "I" and i[j+2].upper() == "E":
                 incorrect_spell.append(i)
-    
-    
     print(correct_spell, incorrect_spell)
-
-    
-
-
-    
     
 
 except IOError:
